@@ -10,7 +10,12 @@ const logoutbtn = document.getElementById("logout-btn");
 const repositoryNav = document.getElementById("repository");
 const saveNav = document.getElementById("savedPapers");
 const historyNav = document.getElementById("history");
+const menu = document.getElementById("menu");
 // ------------------------------ EVENTS / MODE ------------------------------ //
+
+menu.addEventListener("click", () => {
+  document.querySelector(".menu").classList.toggle("menu-show");
+});
 
 logoutbtn.addEventListener("click", () => {
   window.location.href = "login.html";
